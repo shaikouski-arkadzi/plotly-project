@@ -1,0 +1,59 @@
+.table-wrapper {
+  height: 50vh;
+  width: max-content;
+}
+
+.table-wrapper {
+  overflow: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 0;
+}
+
+.table__head {
+  z-index: 3;
+  position: relative;
+}
+th {
+  background-color: #f8f8f8;
+}
+
+th,
+td {
+  padding: 0.6rem;
+  min-width: 6rem;
+  text-align: left;
+  margin: 0;
+}
+
+.table__head th {
+  position: sticky;
+  top: 0;
+}
+.table__head th.pin-head {
+  left: 0;
+  z-index: 4;
+  border-left: 0;
+}
+.table__head th.pin-head:nth-child(1) {
+  cursor: pointer;
+}
+.time-column-header {
+  display: flex;
+  align-items: center;
+}
+.table__body th {
+  position: sticky;
+  left: 0;
+}
+.table__body {
+  z-index: 2;
+  position: relative;
+}
+.date-picker-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
